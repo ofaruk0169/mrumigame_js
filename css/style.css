@@ -25,7 +25,9 @@ body {
 	margin: 0 auto;
 }
 
-
+.container2 {
+	background-image: url(img/banner.jpg);
+}
 section {
     
     margin-top: 100px;
