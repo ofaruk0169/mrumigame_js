@@ -69,3 +69,31 @@ article {
 .details {
 	padding: 8px 100px;
 }
+
+.containerComments {
+	width: 560px;
+	height: 100vh;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+/* comments  */
+
+
+
+
+#containerComments {
+	padding: 500px 18px 10px;
+}
+
+
+#comments {
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+
+}
+
+#comment {
+	padding: 8px 22px;
+}

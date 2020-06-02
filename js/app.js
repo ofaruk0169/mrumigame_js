@@ -73,5 +73,41 @@ $(document).ready(function () {
         mainVid(id);
     });
 
+    //comments call
+  
+
+    
+
+    // https://www.googleapis.com/youtube/v3/commentThreads?key=AIzaSyB6b6JzXJrAxGaPL19Y8z47Kq28nyt2ESU&&textFormat=plainText&part=snippet&allThreadsRelatedToChannelId=UCCpldBpw1eBel90tlxI04Sg
+
+});
+
+
+
+
+
+$(document).ready(function () {
+
+    var URLcomments = 'https://www.googleapis.com/youtube/v3/commentThreads';
+    var allThreadsRelatedToChannelId= 'UCCpldBpw1eBel90tlxI04Sg';
+    var key = 'AIzaSyB6b6JzXJrAxGaPL19Y8z47Kq28nyt2ESU';
+
+
+    var optionsComment = {
+        // part: 'snippet',
+        key: key,
+        textFormat: "plainText",
+        allThreadsRelatedToChannelId: allThreadsRelatedToChannelId,
+        part: 'snippet'
+    }
+
+    loadComments();
+
+    function loadComments() {
+        $.getJSON(URLcomments, optionsComment, function(dataComments) {
+            console.log(dataComments)
+        })
+    }
+
 
 });
