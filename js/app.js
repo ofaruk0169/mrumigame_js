@@ -106,8 +106,40 @@ $(document).ready(function () {
     function loadComments() {
         $.getJSON(URLcomments, optionsComment, function(dataComments) {
             var idComments = dataComments;
-            console.log(idComments);
+            // console.log(idComments);
+            resultsLoopComments(idComments);
         })
+    }
+
+
+
+    function resultsLoopComments(idComments) {
+
+        $.each(idComments.items, function(j, itemComments) {
+
+            var thumbComments = itemComments.snippet.topLevelComment.snippet.authorProfileImageUrl;
+            var commentOriginal = itemComments.snippet.topLevelComment.snippet.textOriginal;
+            var displayName = itemComments.snippet.topLevelComment.snippet.authorDisplayName;
+
+
+            $('#comments').append(`
+            <article>
+                <img src="${thumbComments}" alt="" class="thumb">
+                
+                <div class="details">
+                    <h4>${displayName} </h4>
+                    <p>${commentOriginal}</p>
+                </div>
+            </article>
+            
+            
+            `)
+
+        });
+
+        
+
+       
     }
 
 
@@ -122,12 +154,8 @@ $(document).ready(function () {
 //     });
 // }
 
-// function mainVid(id) {
-//     $('#video').html(`
-//                 <iframe width="560" height="315" src="https://www.youtube.com/embed/${id}" frameborder="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-//             `);
-// }
 
+// https://yt3.ggpht.com/a/AATXAJwiU6G_gvfCAsJI7iGlgJk8dD9zAtUl6oFOoQ=s48-c-k-c0xffffffff-no-rj-mo
     
 // function resultsLoop(data) {
 
