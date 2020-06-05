@@ -6,6 +6,7 @@
 	<title>WebSite Development</title>
 	<link rel="stylesheet" href="styles.css">
 	<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
 
@@ -15,7 +16,7 @@
 		<div class="logo">
 			<!-- <a href="#">Coding Market</a> -->
 		</div>
-		<div class="navbar_items">
+		<!-- <div class="navbar_items">
 			<ul>
 				<li><a href="#">home</a></li>
 				<li><a href="#about">about</a></li>
@@ -23,7 +24,27 @@
 				<li><a href="#contactus">contact</a></li>
 				<li><a href="#ourteam">our team</a></li>
 			</ul>
-		</div>
+		</div> -->
+
+		<nav>
+
+			<div class="menu-icon">
+				  <i class="fa fa-bars fa-2x"></i>
+			</div>
+
+			<div class="logo">
+				  MrUmigame
+			</div>
+
+			<div class="menu">
+				  <ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+				  </ul>
+			</div>
+	  </nav>
 	</div>
 
 	<div class="banner_image">
@@ -34,13 +55,28 @@
 	</div>
 
 	<div class="about" id="about">
-		<h1 class="title">About Us</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, eveniet temporibus reprehenderit. Veniam sunt corrupti necessitatibus quam, quia doloribus nesciunt ut eveniet, alias aspernatur eum perferendis commodi doloremque recusandae tenetur quis cumque voluptatibus officiis ea excepturi dignissimos! Repellat molestias iusto dicta facere ipsum, harum maiores illum laborum tenetur? Explicabo, cupiditate!</p>
-		<div class="btn"><a href="#">Learn More</a></div>
+		<h1 class="title">About Me</h1>
+		
+		<div class="box">
+			<img src="images/team1.jpg" alt="" class="box-img">
+			<h1>
+		  Mr Umigame</h1>
+		  <h5>
+		  Musician</h5>
+		  <p>
+		  Hey, I'm Andy. I like music and playing video games.</p>
+		  <ul>
+		  <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+		  <li><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+		  <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+		 
+		  </ul>
+		  </div>
+
 	</div>
 
 	<div class="services" id="services">
-		<h1 class="title">our Services</h1>
+		<h1 class="title">What I do</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quia, porro repellendus dolore repudiandae, accusantium corporis harum vel iste suscipit maiores provident ullam itaque libero minus nesciunt consequatur iusto numquam asperiores quod fugiat veniam blanditiis.</p>
 		<div class="diff_services">
 			<div class="diff_services_item">
@@ -90,21 +126,7 @@
 		</div>
 	</div>	 -->
 
-	<div class="box">
-		<img src="images/team1.jpg" alt="" class="box-img">
-		<h1>
-	  Mr Umigame</h1>
-	  <h5>
-	  Musician</h5>
-	  <p>
-	  A web developer is a programmer who specializes in, or is specifically engaged in, the development of World Wide Web applications, or applications that are run over HTTP from a web server to a web browser.</p>
-	  <ul>
-	  <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-	  <li><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
-	  <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-	 
-	  </ul>
-	  </div>
+	
 
 
 	<div class="footer">
@@ -116,6 +138,31 @@
 		<a href="#home"><img src="images/arrow.png" alt="up_arrow"></a>
 	</div>
 </div>	
+
+<script type="text/javascript">
+
+	// Menu-toggle button
+
+	$(document).ready(function() {
+		  $(".menu-icon").on("click", function() {
+				$("nav ul").toggleClass("showing");
+		  });
+	});
+
+	// Scrolling Effect
+
+	$(window).on("scroll", function() {
+		  if($(window).scrollTop()) {
+				$('nav').addClass('black');
+		  }
+
+		  else {
+				$('nav').removeClass('black');
+		  }
+	})
+
+
+	</script>
 	
 </body>
 </html>
