@@ -28,6 +28,7 @@ body {
 .container2 {
 	background-image: url(img/banner.jpg);
 }
+
 section {
     
     margin-top: 100px;
@@ -46,7 +47,19 @@ section {
 }
 
 main {
-	padding: 10px 18px 10px;
+	padding: 60px 18px 10px 50px;
+	width: 960px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+#other {
+	margin: auto;
+	margin-top: 2%;
+	width: 50%;
+	border: 3px solid green;
+	padding: 10px;
+	text-align: center;
 }
 
 article {
@@ -56,9 +69,11 @@ article {
 	border: 2px solid white;
 	border-radius: 8px;
 	margin: 0 auto;
-	&:hover {
-		border: 2px solid #ff9999;
-	}
+	cursor: pointer;
+}
+
+article:hover {
+	border: 2px solid #ff9999;
 }
 
 .thumb {
@@ -71,7 +86,7 @@ article {
 }
 
 .containerComments {
-	width: 560px;
+	/* width: 560px; */
 	height: 100vh;
 	background-color: #fff;
 	margin: 0 auto;
@@ -82,15 +97,17 @@ article {
 
 
 
-#containerComments {
+/* #containerComments {
 	padding: 500px 18px 10px;
-}
+} */
 
 
 #comments {
-	display: flex;
+	/* display: flex;
 	align-items: center;
-	padding: 8px 12px;
+	padding: 8px 12px; */
+
+	padding: 60px 18px 10px 50px;
 
 }
 
