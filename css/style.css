@@ -16,12 +16,12 @@ p {
 }
 
 body {
-	background-color: #fff;
+	background-color: #D3D3D3;
 }
 
 .container {
 	width: 1560px;
-	background-color: #fff;
+	background-color: #D3D3D3;
 	margin: 0 auto;
 }
 
@@ -34,7 +34,7 @@ section {
     margin-top: 100px;
 	text-align: center;
 	width: 1560px;
-	background-color: #fff;
+	background-color: r#D3D3D3;
 }
 
 section {
@@ -108,9 +108,42 @@ article:hover {
 	padding: 8px 12px; */
 
 	padding: 60px 18px 10px 50px;
+	width: 960px;
+	background-color: #fff;
+	margin: 0 auto;
 
 }
 
 #comment {
 	padding: 8px 22px;
 }
+
+user_comment {
+	list-style-type: none;
+}
+
+
+
+	/* .user_avatar {
+		width: 65px;
+		height: 65px;
+	
+		display: inline-block;
+		vertical-align: middle;
+	
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+	} */
+
+#commentPad {
+	padding-top: 20px;
+}
+
+#avatarStyle {
+		padding-bottom: 10px;
+		border-radius: 50%;
+}
+	

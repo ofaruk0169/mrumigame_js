@@ -60,8 +60,8 @@ $(document).ready(function () {
 								<div class="details">
 									<h4>${title}</h4>
 									<p>${desc}</p>
-								</div>
-
+                                </div>
+                               
 							</article>
 						`);
         });
@@ -123,13 +123,31 @@ $(document).ready(function () {
 
 
             $('#comments').append(`
+            
+
+
+            
+
+
+
+
             <article>
-                <img src="${thumbComments}" alt="" class="thumb">
-                
-                <div class="details">
-                    <h4>${displayName} </h4>
-                    <p>${commentOriginal}</p>
-                </div>
+            
+            <!-- new comment -->
+            <div class="new_comment">
+   
+               <!-- build comment -->
+                <ul class="user_comment">
+   
+                    <!-- current #{user} avatar -->
+                    <div class="user_avatar">
+                        <img src="${thumbComments}" id="avatarStyle">
+                    </div><!-- the comment body --><div class="comment_body">
+                        <h4>${displayName} </h4>
+                        <p id="commentPad">${commentOriginal}</p>
+                    </div>
+
+        
             </article>
             
             
